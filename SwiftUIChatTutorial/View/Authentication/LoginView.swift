@@ -12,6 +12,12 @@ struct LoginView: View {
         VStack {
             Text("Hello.")
                 .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text("Welcome Back.")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.blue)
         }
     }
 }
