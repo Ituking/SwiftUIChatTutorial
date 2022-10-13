@@ -9,16 +9,21 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            HStack {
+                Spacer()
+            }
+            
             Text("Hello.")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            Text("Welcome Back.")
+            Text("Welcome Back")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.blue)
         }
+        .padding(.leading)
     }
 }
 
