@@ -51,6 +51,11 @@
 		C7AE3B8F28F7C4A600B37121 /* SwiftUIChatTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				C7AE3BA228F7D56F00B37121 /* Model */,
+				C7AE3BA128F7D56B00B37121 /* View */,
+				C7AE3BA028F7D56700B37121 /* ViewModel */,
+				C7AE3B9F28F7D56100B37121 /* API */,
+				C7AE3B9E28F7D54400B37121 /* Utils */,
 				C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */,
 				C7AE3B9228F7C4A600B37121 /* ContentView.swift */,
 				C7AE3B9428F7C4A800B37121 /* Assets.xcassets */,
@@ -65,6 +70,41 @@
 				C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7AE3B9E28F7D54400B37121 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C7AE3B9F28F7D56100B37121 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C7AE3BA028F7D56700B37121 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7AE3BA128F7D56B00B37121 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7AE3BA228F7D56F00B37121 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
