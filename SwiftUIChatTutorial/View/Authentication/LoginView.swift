@@ -29,15 +29,27 @@ struct LoginView: View {
                         .foregroundColor(.blue)
                     
                     VStack(spacing: 20) {
-                        VStack {
+                        VStack(spacing: 16) {
                             HStack {
                                 Image(systemName: "envelope")
                                 
                                 TextField("Email", text: $email)
                             }
+                            
+                            Divider()
+                                .background(Color(.darkGray))
                         }
                         
-                        SecureField("Password", text: $password)
+                        VStack(spacing: 16) {
+                            HStack {
+                                Image(systemName: "lock")
+                                
+                                SecureField("Password", text: $password)
+                            }
+                            
+                            Divider()
+                                .background(Color(.darkGray))
+                        }
                     }
                     .padding([.top, .horizontal], 32)
                 }
