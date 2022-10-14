@@ -13,26 +13,29 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                HStack {
-                    Spacer()
-                }
-                
-                Text("Hello.")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                
-                Text("Welcome Back")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.blue)
-                
-                VStack(spacing: 20) {
-                    TextField("Email", text: $email)
+            VStack {
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Spacer()
+                    }
                     
-                    SecureField("Password", text: $password)
+                    Text("Hello.")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    
+                    Text("Welcome Back")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.blue)
+                    
+                    VStack(spacing: 20) {
+                        TextField("Email", text: $email)
+                        
+                        SecureField("Password", text: $password)
+                    }
+                    .padding([.top, .horizontal], 32)
                 }
-                .padding([.top, .horizontal], 32)
+                .padding(.leading)
                 
                 HStack {
                     Spacer()
@@ -73,9 +76,8 @@ struct LoginView: View {
                             Text("Sign Up")
                                 .font(.system(size: 14, weight: .semibold))
                         }
-                    })
+                    }).padding(.bottom, 32)
             }
-            .padding(.leading)
         }
         .padding(.top, -56)
     }
