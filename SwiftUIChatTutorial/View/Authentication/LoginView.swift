@@ -32,6 +32,10 @@ struct LoginView: View {
                         VStack(spacing: 16) {
                             HStack {
                                 Image(systemName: "envelope")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(Color(.darkGray))
                                 
                                 TextField("Email", text: $email)
                             }
@@ -43,6 +47,10 @@ struct LoginView: View {
                         VStack(spacing: 16) {
                             HStack {
                                 Image(systemName: "lock")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(Color(.darkGray))
                                 
                                 SecureField("Password", text: $password)
                             }
