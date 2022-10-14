@@ -29,20 +29,7 @@ struct LoginView: View {
                         .foregroundColor(.blue)
                     
                     VStack(spacing: 20) {
-                        VStack(spacing: 16) {
-                            HStack {
-                                Image(systemName: "envelope")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(Color(.darkGray))
-                                
-                                TextField("Email", text: $email)
-                            }
-                            
-                            Divider()
-                                .background(Color(.darkGray))
-                        }
+                        CustomTextField(imageName: "envelope", placeholderText: "Email", text: $email)
                         
                         VStack(spacing: 16) {
                             HStack {
@@ -112,5 +99,28 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+    }
+}
+
+struct CustomTextField: View {
+    let imageName: String
+    let placeholderText: String
+    @Binding var text: String
+    
+    var body: some View {
+        VStack(spacing: 16) {
+            HStack {
+                Image(systemName: "envelope")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(Color(.darkGray))
+                
+                TextField(placeholderText, text: $text)
+            }
+            
+            Divider()
+                .background(Color(.darkGray))
+        }
     }
 }
