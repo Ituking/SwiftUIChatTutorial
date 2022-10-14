@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var email = ""
+    @State private var password = ""
     
     var body: some View {
         NavigationView {
@@ -28,6 +29,8 @@ struct LoginView: View {
                 
                 VStack {
                     TextField("Email", text: $email)
+                    
+                    SecureField("Password", text: $password)
                 }
                 
                 Spacer()
