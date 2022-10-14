@@ -34,6 +34,16 @@ struct LoginView: View {
                 }
                 .padding([.top, .horizontal], 32)
                 
+                Button(action: {
+                    print("Handle sign up..")
+                }, label: {
+                    Text("Sign In")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 340, height: 50)
+                        .background(Color.blue)
+                })
+                
                 Spacer()
             }
             .padding(.leading)
