@@ -29,9 +29,19 @@ struct LoginView: View {
                         .foregroundColor(.blue)
                     
                     VStack(spacing: 20) {
-                        CustomTextField(imageName: "envelope", placeholderText: "Email", text: $email)
+                        CustomTextField(
+                            imageName: "envelope",
+                            placeholderText: "Email",
+                            isSecureField: false,
+                            text: $email
+                        )
                         
-                        CustomTextField(imageName: "lock", placeholderText: "Password", text: $password)
+                        CustomTextField(
+                            imageName: "lock",
+                            placeholderText: "Password",
+                            isSecureField: true,
+                            text: $password
+                        )
                     }
                     .padding([.top, .horizontal], 32)
                 }
@@ -92,18 +102,23 @@ struct LoginView_Previews: PreviewProvider {
 struct CustomTextField: View {
     let imageName: String
     let placeholderText: String
+    let isSecureField: Bool
     @Binding var text: String
     
     var body: some View {
         VStack(spacing: 16) {
             HStack {
-                Image(systemName: "envelope")
+                Image(systemName: imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
                     .foregroundColor(Color(.darkGray))
                 
-                TextField(placeholderText, text: $text)
+                if isSecureField {
+                    SecureField(placeholderText, text: $text)
+                } else {
+                    TextField(placeholderText, text: $text)
+                }
             }
             
             Divider()
