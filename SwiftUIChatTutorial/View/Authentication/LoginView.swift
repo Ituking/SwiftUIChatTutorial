@@ -68,6 +68,10 @@ struct LoginView: View {
                     label: {
                         HStack {
                             Text("Don't have an account?")
+                                .font(.system(size: 14))
+                            
+                            Text("Sign Up")
+                                .font(.system(size: 14, weight: .semibold))
                         }
                     })
             }
