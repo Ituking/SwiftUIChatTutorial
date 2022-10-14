@@ -62,6 +62,14 @@ struct LoginView: View {
                 .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
                 
                 Spacer()
+                
+                NavigationLink(
+                    destination: RegistrationView(),
+                    label: {
+                        HStack {
+                            Text("Don't have an account?")
+                        }
+                    })
             }
             .padding(.leading)
         }
