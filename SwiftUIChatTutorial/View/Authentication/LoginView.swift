@@ -27,11 +27,12 @@ struct LoginView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
                 
-                VStack {
+                VStack(spacing: 20) {
                     TextField("Email", text: $email)
                     
                     SecureField("Password", text: $password)
                 }
+                .padding([.top, .horizontal], 32)
                 
                 Spacer()
             }
