@@ -45,6 +45,7 @@ struct LoginView: View {
                         .clipShape(Capsule())
                         .padding()
                 })
+                .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
                 
                 Spacer()
             }
