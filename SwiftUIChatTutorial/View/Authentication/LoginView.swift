@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -23,6 +25,10 @@ struct LoginView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
+                
+                VStack {
+                    TextField("Email", text: $email)
+                }
                 
                 Spacer()
             }
