@@ -27,7 +27,7 @@ struct RegistrationView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
                 
-                VStack(spacing: 20) {
+                VStack(spacing: 32) {
                     CustomTextField(
                         imageName: "envelope",
                         placeholderText: "Email",
@@ -59,6 +59,19 @@ struct RegistrationView: View {
                 .padding([.top, .horizontal], 32)
             }
             .padding(.leading)
+            
+            Button(action: {
+                print("Handle sign up..")
+            }, label: {
+                Text("Sign Up")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(width: 340, height: 50)
+                    .background(Color.blue)
+                    .clipShape(Capsule())
+                    .padding()
+            })
+            .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
             
             Spacer()
         }
