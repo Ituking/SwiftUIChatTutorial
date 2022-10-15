@@ -74,6 +74,16 @@ struct RegistrationView: View {
             .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
             
             Spacer()
+            
+            Button(action: {}, label: {
+                HStack {
+                    Text("Already have an account?")
+                        .font(.system(size: 14))
+                    
+                    Text("Sign In")
+                        .font(.system(size: 14, weight: .semibold))
+                }
+            })
         }
     }
 }
