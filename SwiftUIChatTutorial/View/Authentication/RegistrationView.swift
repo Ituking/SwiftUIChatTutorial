@@ -8,8 +8,44 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
-        Text("RegistrationView")
+        VStack {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack {
+                    Spacer()
+                }
+                
+                Text("Hello.")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text("Welcome Back")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                
+                VStack(spacing: 20) {
+                    CustomTextField(
+                        imageName: "envelope",
+                        placeholderText: "Email",
+                        isSecureField: false,
+                        text: $email
+                    )
+                    
+                    CustomTextField(
+                        imageName: "lock",
+                        placeholderText: "Password",
+                        isSecureField: true,
+                        text: $password
+                    )
+                }
+                .padding([.top, .horizontal], 32)
+            }
+            .padding(.leading)
+        }
     }
 }
 
