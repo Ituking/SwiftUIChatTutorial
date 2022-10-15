@@ -11,6 +11,7 @@
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
 		C7AE3B9528F7C4A800B37121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9428F7C4A800B37121 /* Assets.xcassets */; };
 		C7AE3B9828F7C4A800B37121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */; };
+		C7BA5DDF28FB1CC2004C1C68 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */; };
 		C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0228F7D8B7005298CE /* LoginView.swift */; };
 		C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */; };
 		C7D7BA0728F9EE52005298CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0628F9EE52005298CE /* CustomTextField.swift */; };
@@ -22,6 +23,7 @@
 		C7AE3B9228F7C4A600B37121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7AE3B9428F7C4A800B37121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C7D7BA0228F7D8B7005298CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C7D7BA0628F9EE52005298CE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		C7AE3BA128F7D56B00B37121 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7D7BA0828FB1B4F005298CE /* Main */,
 				C7D7BA0128F7D83F005298CE /* Authentication */,
 			);
 			path = View;
@@ -122,6 +125,14 @@
 				C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C7D7BA0828FB1B4F005298CE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
 				C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */,
 				C7D7BA0728F9EE52005298CE /* CustomTextField.swift in Sources */,
+				C7BA5DDF28FB1CC2004C1C68 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
