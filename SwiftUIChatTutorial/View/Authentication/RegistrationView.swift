@@ -18,11 +18,11 @@ struct RegistrationView: View {
                     Spacer()
                 }
                 
-                Text("Hello.")
+                Text("Get started.")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
-                Text("Welcome Back")
+                Text("Create your account.")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
@@ -30,6 +30,20 @@ struct RegistrationView: View {
                 VStack(spacing: 20) {
                     CustomTextField(
                         imageName: "envelope",
+                        placeholderText: "Email",
+                        isSecureField: false,
+                        text: $email
+                    )
+                    
+                    CustomTextField(
+                        imageName: "person",
+                        placeholderText: "Email",
+                        isSecureField: false,
+                        text: $email
+                    )
+                    
+                    CustomTextField(
+                        imageName: "person",
                         placeholderText: "Email",
                         isSecureField: false,
                         text: $email
@@ -45,6 +59,8 @@ struct RegistrationView: View {
                 .padding([.top, .horizontal], 32)
             }
             .padding(.leading)
+            
+            Spacer()
         }
     }
 }
