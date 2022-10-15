@@ -40,14 +40,14 @@ struct RegistrationView: View {
                     
                     CustomTextField(
                         imageName: "person",
-                        placeholderText: "Email",
+                        placeholderText: "Username",
                         isSecureField: false,
                         text: $username
                     )
                     
                     CustomTextField(
                         imageName: "person",
-                        placeholderText: "Email",
+                        placeholderText: "Full name",
                         isSecureField: false,
                         text: $fullname
                     )
