@@ -12,6 +12,7 @@ struct RegistrationView: View {
     @State private var password = ""
     @State private var fullname = ""
     @State private var username = ""
+    @Environment(\.presentationMode) var mode
     
     var body: some View {
         VStack {
@@ -78,7 +79,7 @@ struct RegistrationView: View {
             
             Spacer()
             
-            Button(action: {}, label: {
+            Button(action: { mode.wrappedValue.dismiss() }, label: {
                 HStack {
                     Text("Already have an account?")
                         .font(.system(size: 14))
