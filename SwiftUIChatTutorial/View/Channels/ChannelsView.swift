@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ChannelView: View {
+struct ChannelsView: View {
     var body: some View {
         Text("Channels view goes here..")
     }
 }
 
-struct ChannelView_Previews: PreviewProvider {
+struct ChannelsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChannelView()
+        ChannelsView()
     }
 }

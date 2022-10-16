@@ -11,17 +11,17 @@ struct MainTabView: View {
     var body: some View {
         NavigationView {
             TabView {
-                Text("Chats")
+                ConversationsView()
                     .tabItem {
                         Image(systemName: "bubble.left")
                     }
                 
-                Text("Channels")
+                ChannelsView()
                     .tabItem {
                         Image(systemName: "bubble.left.and.bubble.right")
                     }
                 
-                Text("Settings")
+                SettingsView()
                     .tabItem {
                         Image(systemName: "gear")
                     }
