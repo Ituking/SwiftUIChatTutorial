@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SettingsCell: View {
+    let viewModel: SerringsCellViewModel
+    
     var body: some View {
         VStack {
             
             HStack {
-                Image(systemName: "star.fill")
+                Image(systemName: viewModel.imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 22, height: 22)
@@ -21,7 +23,7 @@ struct SettingsCell: View {
                     .foregroundColor(.white)
                     .cornerRadius(6)
                 
-                Text("Starred Messages")
+                Text(viewModel.title)
                     .font(.system(size: 15))
                 
                 Spacer()
@@ -34,12 +36,6 @@ struct SettingsCell: View {
             Divider()
                 .padding(.leading)
         }
-        .background(Color.white)
-    }
-}
-
-struct SettingsCell_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsCell()
+        .background(viewModel.backgroundColor)
     }
 }
