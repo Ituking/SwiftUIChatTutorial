@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */; };
 		C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */; };
 		C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */; };
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 		C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C7AE3B8D28F7C4A600B37121 /* SwiftUIChatTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatTutorialApp.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		C7AE3BA028F7D56700B37121 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
 				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
+				C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */,
 				C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */,
 				C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */,
 				C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */,
