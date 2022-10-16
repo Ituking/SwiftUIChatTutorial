@@ -16,9 +16,11 @@ struct SettingsView: View {
             VStack(spacing: 32) {
                 SettingsHeaderView()
                 
-                Text("Account")
-                Text("Account")
-                Text("Account")
+                VStack(spacing: 1) {
+                    ForEach((0 ... 2), id: \.self) { _ in
+                        SettingsCell()
+                    }
+                }
                 
                 Text("Log out")
                 

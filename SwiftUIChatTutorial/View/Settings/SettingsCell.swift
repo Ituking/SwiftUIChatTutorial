@@ -34,6 +34,7 @@ struct SettingsCell: View {
             Divider()
                 .padding(.leading)
         }
+        .background(Color.white)
     }
 }
 
