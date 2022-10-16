@@ -5,6 +5,8 @@
 //  Created by 大久保樹 on 2022/10/16.
 //
 
+import SwiftUI
+
 enum SerringsCellViewModel: Int, CaseIterable {
     case account
     case notifications
@@ -26,11 +28,11 @@ enum SerringsCellViewModel: Int, CaseIterable {
         }
     }
     
-    var backgroundColor: String {
+    var backgroundColor: Color {
         switch self {
-        case .account: return "Account"
-        case .notifications: return "Notifications"
-        case .starredMessages: return "Starred Messages"
+        case .account: return .blue
+        case .notifications: return .red
+        case .starredMessages: return .yellow
         }
     }
 }
