@@ -15,6 +15,9 @@
 		C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0228F7D8B7005298CE /* LoginView.swift */; };
 		C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */; };
 		C7D7BA0728F9EE52005298CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0628F9EE52005298CE /* CustomTextField.swift */; };
+		C7D8F7A528FBB92E009831F1 /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7A428FBB92E009831F1 /* ChannelView.swift */; };
+		C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7A628FBB99F009831F1 /* SettingsView.swift */; };
+		C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7A828FBBA21009831F1 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		C7D7BA0228F7D8B7005298CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C7D7BA0628F9EE52005298CE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C7D8F7A428FBB92E009831F1 /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		C7D8F7A628FBB99F009831F1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C7D8F7A828FBBA21009831F1 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 		C7AE3BA128F7D56B00B37121 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7D8F7A328FBB902009831F1 /* Chats */,
+				C7D8F7A228FBB8EA009831F1 /* Settings */,
+				C7D8F7A128FBB8D2009831F1 /* Channels */,
 				C7D7BA0828FB1B4F005298CE /* Main */,
 				C7D7BA0128F7D83F005298CE /* Authentication */,
 			);
@@ -133,6 +142,30 @@
 				C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		C7D8F7A128FBB8D2009831F1 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				C7D8F7A428FBB92E009831F1 /* ChannelView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		C7D8F7A228FBB8EA009831F1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C7D8F7A628FBB99F009831F1 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C7D8F7A328FBB902009831F1 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				C7D8F7A828FBBA21009831F1 /* ChatView.swift */,
+			);
+			path = Chats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
+				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
 				C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
+				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
 				C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */,
 				C7D7BA0728F9EE52005298CE /* CustomTextField.swift in Sources */,
+				C7D8F7A528FBB92E009831F1 /* ChannelView.swift in Sources */,
 				C7BA5DDF28FB1CC2004C1C68 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
