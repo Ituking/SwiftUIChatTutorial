@@ -14,7 +14,22 @@ struct SettingsView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 32) {
-                Text("Settings Header")
+                HStack {
+                    Image(systemName: "person")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 44, height: 64)
+                        .clipShape(Circle())
+                    .padding(.leading)
+                    
+                    VStack {
+                        Text("Okubo Itsuki")
+                        
+                        Text("Available")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 14))
+                    }
+                }
                 
                 Text("Account")
                 Text("Account")
