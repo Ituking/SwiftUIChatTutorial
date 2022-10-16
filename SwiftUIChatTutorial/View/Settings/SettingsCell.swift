@@ -1,0 +1,44 @@
+//
+//  SettingsCell.swift
+//  SwiftUIChatTutorial
+//
+//  Created by 大久保樹 on 2022/10/16.
+//
+
+import SwiftUI
+
+struct SettingsCell: View {
+    var body: some View {
+        VStack {
+            
+            HStack {
+                Image(systemName: "star.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 22, height: 22)
+                    .padding(6)
+                    .background(Color.yellow)
+                    .foregroundColor(.white)
+                    .cornerRadius(6)
+                
+                Text("Starred Messages")
+                    .font(.system(size: 15))
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.gray)
+            }
+            .padding([.top, .horizontal])
+            
+            Divider()
+                .padding(.leading)
+        }
+    }
+}
+
+struct SettingsCell_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsCell()
+    }
+}
