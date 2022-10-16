@@ -15,7 +15,6 @@ struct MainTabView: View {
             TabView(selection: $selectedIndex) {
                 ConversationsView()
                     .onTapGesture {
-                        print("Selected index in \(selectedIndex)")
                         selectedIndex = 0
                     }
                     .tabItem {
@@ -25,7 +24,6 @@ struct MainTabView: View {
                 
                 ChannelsView()
                     .onTapGesture {
-                        print("Selected index in \(selectedIndex)")
                         selectedIndex = 1
                     }
                     .tabItem {
@@ -35,7 +33,6 @@ struct MainTabView: View {
                 
                 SettingsView()
                     .onTapGesture {
-                        print("Selected index in \(selectedIndex)")
                         selectedIndex = 2
                     }
                     .tabItem {
