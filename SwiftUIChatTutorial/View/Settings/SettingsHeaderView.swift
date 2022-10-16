@@ -20,6 +20,7 @@ struct SettingsHeaderView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Okubo Itsuki")
                     .font(.system(size: 18))
+                    .foregroundColor(.black)
                 
                 Text("Available")
                     .foregroundColor(.gray)
