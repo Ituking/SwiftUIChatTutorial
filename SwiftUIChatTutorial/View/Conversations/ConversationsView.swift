@@ -10,6 +10,7 @@ import SwiftUI
 struct ConversationsView: View {
     var body: some View {
         Text("Conversations view..")
+            .navigationTitle("Chats")
     }
 }
 
