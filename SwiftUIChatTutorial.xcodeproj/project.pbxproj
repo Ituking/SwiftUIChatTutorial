@@ -19,6 +19,7 @@
 		C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7A828FBBA21009831F1 /* ChatView.swift */; };
 		C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7AB28FBBAA6009831F1 /* ConversationsView.swift */; };
 		C7D8F7AE28FBCA33009831F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D8F7AD28FBCA32009831F1 /* Assets.xcassets */; };
+		C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8F7AF28FC045B009831F1 /* SettingsHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C7D8F7A828FBBA21009831F1 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C7D8F7AB28FBBAA6009831F1 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		C7D8F7AD28FBCA32009831F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		C7D8F7AF28FC045B009831F1 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D8F7A628FBB99F009831F1 /* SettingsView.swift */,
+				C7D8F7AF28FC045B009831F1 /* SettingsHeaderView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
 				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
 				C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */,
+				C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */,
 				C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
 				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
