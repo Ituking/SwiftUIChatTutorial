@@ -9,8 +9,22 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text("Settings view..")
-            .navigationTitle("Settings")
+        ZStack {
+            Color(.systemGroupedBackground)
+                .ignoresSafeArea()
+            
+            VStack(spacing: 32) {
+                Text("Settings Header")
+                
+                Text("Account")
+                Text("Account")
+                Text("Account")
+                
+                Text("Log out")
+                
+                Spacer()
+            }
+        }
     }
 }
 
