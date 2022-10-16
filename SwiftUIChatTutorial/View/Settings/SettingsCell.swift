@@ -19,7 +19,7 @@ struct SettingsCell: View {
                     .scaledToFit()
                     .frame(width: 22, height: 22)
                     .padding(6)
-                    .background(Color.yellow)
+                    .background(viewModel.backgroundColor)
                     .foregroundColor(.white)
                     .cornerRadius(6)
                 
@@ -36,6 +36,6 @@ struct SettingsCell: View {
             Divider()
                 .padding(.leading)
         }
-        .background(viewModel.backgroundColor)
+        .background(Color.white)
     }
 }
