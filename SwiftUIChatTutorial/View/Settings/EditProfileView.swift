@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EditProfileView: View {
+    @State private var fullname = "Okubo Itsuki"
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -39,6 +40,12 @@ struct EditProfileView: View {
                             .foregroundColor(.gray)
                             .padding([.bottom, .horizontal])
                     }
+                    
+                    Divider()
+                        .padding(.horizontal)
+                    
+                    TextField("", text: $fullname)
+                        .padding(8)
                 }
                 
                 // status
