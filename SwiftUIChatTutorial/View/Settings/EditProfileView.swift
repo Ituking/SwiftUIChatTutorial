@@ -34,6 +34,7 @@ struct EditProfileView: View {
                                 Text("Edit")
                             })
                         }
+                        .padding(.top)
                         
                         Text("Change your name or change your profile photo")
                             .font(.system(size: 16))
@@ -68,6 +69,8 @@ struct EditProfileView: View {
                 
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Edit Profile")
     }
 }
 
