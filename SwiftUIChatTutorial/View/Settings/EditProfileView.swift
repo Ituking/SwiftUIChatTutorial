@@ -47,6 +47,7 @@ struct EditProfileView: View {
                     TextField("", text: $fullname)
                         .padding(8)
                 }
+                .background(Color.white)
                 
                 // status
                 
@@ -62,6 +63,9 @@ struct EditProfileView: View {
                             .foregroundColor(.gray)
                     }
                 }
+                
+                Spacer()
+                
             }
         }
     }
