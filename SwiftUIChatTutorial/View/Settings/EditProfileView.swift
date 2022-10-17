@@ -14,7 +14,7 @@ struct EditProfileView: View {
             Color(.systemGroupedBackground)
                 .ignoresSafeArea()
             
-            VStack {
+            VStack(alignment: .leading, spacing: 44) {
                 // header
                 
                 VStack {
@@ -52,17 +52,23 @@ struct EditProfileView: View {
                 
                 // status
                 
-                VStack {
+                VStack(alignment: .leading) {
                     // status text
-                    
+                    Text("Status")
+                        .padding()
+                        .foregroundColor(.gray)
                     // status
                     
                     HStack {
                         Text("At the movies")
                         
+                        Spacer()
+                        
                         Image(systemName: "chevron.right")
                             .foregroundColor(.gray)
                     }
+                    .padding()
+                    .background(Color.white)
                 }
                 
                 Spacer()
