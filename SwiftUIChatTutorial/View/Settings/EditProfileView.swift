@@ -59,16 +59,20 @@ struct EditProfileView: View {
                         .foregroundColor(.gray)
                     // status
                     
-                    HStack {
-                        Text("At the movies")
-                        
-                        Spacer()
-                        
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.gray)
-                    }
-                    .padding()
-                    .background(Color.white)
+                    NavigationLink(
+                        destination: Text("Edit Status"),
+                        label: {
+                            HStack {
+                                Text("At the movies")
+                                
+                                Spacer()
+                                
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding()
+                            .background(Color.white)
+                        })
                 }
                 
                 Spacer()
