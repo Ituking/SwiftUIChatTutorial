@@ -33,6 +33,11 @@ struct EditProfileView: View {
                                 Text("Edit")
                             })
                         }
+                        
+                        Text("Change your name or change your profile photo")
+                            .font(.system(size: 16))
+                            .foregroundColor(.gray)
+                            .padding([.bottom, .horizontal])
                     }
                 }
                 
