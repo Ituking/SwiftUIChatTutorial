@@ -21,7 +21,17 @@ struct EditProfileView: View {
                     HStack {
                         // photo / edit button
                         VStack {
+                            Image("venom-7")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 64, height: 64)
+                                .clipShape(Circle())
                             
+                            Button(action: {
+                                print("Change profile photo here..")
+                            }, label: {
+                                Text("Edit")
+                            })
                         }
                     }
                 }
