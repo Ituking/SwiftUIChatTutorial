@@ -16,14 +16,19 @@ struct StatusSelectorView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     Text("CURRENTLY SET TO")
+                        .foregroundColor(.gray)
+                        .padding()
                     
                     HStack {
                         Text("Available")
                         Spacer()
                     }
                     .padding()
+                    .background(Color.white)
                     
                     Text("SELECT YOUR STATUS")
+                        .foregroundColor(.gray)
+                        .padding()
                     
                     // for loop with options
                     
@@ -33,6 +38,7 @@ struct StatusSelectorView: View {
                             Spacer()
                         }
                         .padding()
+                        .background(Color.white)
                     }
                 }
             }
