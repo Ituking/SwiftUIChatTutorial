@@ -51,6 +51,7 @@ struct StatusCell: View {
     var body: some View {
         HStack {
             Text("Available")
+                .foregroundColor(.black)
             Spacer()
         }
         .frame(height: 56)
