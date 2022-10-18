@@ -12,6 +12,7 @@
 		C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */; };
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
 		C7AE3B9828F7C4A800B37121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */; };
+		C7B20DCA28FECE240001168E /* StatusSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B20DC928FECE240001168E /* StatusSelectorView.swift */; };
 		C7B763C828FC444100560561 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B763C728FC444100560561 /* EditProfileView.swift */; };
 		C7BA5DDF28FB1CC2004C1C68 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */; };
 		C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0228F7D8B7005298CE /* LoginView.swift */; };
@@ -32,6 +33,7 @@
 		C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatTutorialApp.swift; sourceTree = "<group>"; };
 		C7AE3B9228F7C4A600B37121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7B20DC928FECE240001168E /* StatusSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSelectorView.swift; sourceTree = "<group>"; };
 		C7B763C728FC444100560561 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C7D7BA0228F7D8B7005298CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				C7D8F7AF28FC045B009831F1 /* SettingsHeaderView.swift */,
 				C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */,
 				C7B763C728FC444100560561 /* EditProfileView.swift */,
+				C7B20DC928FECE240001168E /* StatusSelectorView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B763C828FC444100560561 /* EditProfileView.swift in Sources */,
+				C7B20DCA28FECE240001168E /* StatusSelectorView.swift in Sources */,
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
 				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
 				C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */,
