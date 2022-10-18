@@ -19,12 +19,7 @@ struct StatusSelectorView: View {
                         .foregroundColor(.gray)
                         .padding()
                     
-                    HStack {
-                        Text("Available")
-                        Spacer()
-                    }
-                    .padding()
-                    .background(Color.white)
+                    StatusCell()
                     
                     Text("SELECT YOUR STATUS")
                         .foregroundColor(.gray)
@@ -33,12 +28,7 @@ struct StatusSelectorView: View {
                     // for loop with options
                     
                     ForEach((0...10), id: \.self) { _ in
-                        HStack {
-                            Text("Available")
-                            Spacer()
-                        }
-                        .padding()
-                        .background(Color.white)
+                        StatusCell()
                     }
                 }
             }
@@ -49,5 +39,16 @@ struct StatusSelectorView: View {
 struct StatusSelectorView_Previews: PreviewProvider {
     static var previews: some View {
         StatusSelectorView()
+    }
+}
+
+struct StatusCell: View {
+    var body: some View {
+        HStack {
+            Text("Available")
+            Spacer()
+        }
+        .padding()
+        .background(Color.white)
     }
 }
