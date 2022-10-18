@@ -27,7 +27,7 @@ struct StatusSelectorView: View {
                     
                     // for loop with options
                     
-                    ForEach(StatusViewModel.allCases, id: \.self) { viewModel in
+                    ForEach(StatusViewModel.allCases.filter({ $0 != .notCanfigured }), id: \.self) { viewModel in
                         Button(
                             action: {
                                 print("Change status here..")
