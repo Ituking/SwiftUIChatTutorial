@@ -28,7 +28,12 @@ struct StatusSelectorView: View {
                     // for loop with options
                     
                     ForEach((0...10), id: \.self) { _ in
-                        StatusCell()
+                        Button(
+                            action: {
+                                print("Change status here..")
+                            },label: {
+                                StatusCell()
+                        })
                     }
                 }
             }
@@ -48,7 +53,8 @@ struct StatusCell: View {
             Text("Available")
             Spacer()
         }
-        .padding()
+        .frame(height: 56)
+        .padding(.horizontal)
         .background(Color.white)
     }
 }
