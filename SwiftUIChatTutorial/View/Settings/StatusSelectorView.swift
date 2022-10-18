@@ -17,19 +17,23 @@ struct StatusSelectorView: View {
                 VStack(alignment: .leading) {
                     Text("CURRENTLY SET TO")
                     
-                    VStack(spacing: 4) {
-                        HStack {
-                            Text("Available")
-                            Spacer()
-                        }
-                        .padding(.horizontal)
+                    HStack {
+                        Text("Available")
+                        Spacer()
                     }
-                    .frame(height: 56)
-                    .background(Color.white)
+                    .padding()
                     
                     Text("SELECT YOUR STATUS")
                     
                     // for loop with options
+                    
+                    ForEach((0...10), id: \.self) { _ in
+                        HStack {
+                            Text("Available")
+                            Spacer()
+                        }
+                        .padding()
+                    }
                 }
             }
         }
