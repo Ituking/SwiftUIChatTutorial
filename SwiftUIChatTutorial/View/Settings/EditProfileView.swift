@@ -60,7 +60,7 @@ struct EditProfileView: View {
                     // status
                     
                     NavigationLink(
-                        destination: Text("Edit Status"),
+                        destination: StatusSelectorView(),
                         label: {
                             HStack {
                                 Text("At the movies")
