@@ -19,7 +19,7 @@ struct StatusSelectorView: View {
                         .foregroundColor(.gray)
                         .padding()
                     
-                    StatusCell(viewModel: <#StatusViewModel#>)
+                    StatusCell(viewModel:  StatusViewModel(rawValue: 5)!)
                     
                     Text("SELECT YOUR STATUS")
                         .foregroundColor(.gray)
