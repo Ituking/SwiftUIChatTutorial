@@ -5,9 +5,17 @@
 //  Created by 大久保樹 on 2022/10/18.
 //
 
-import Foundation
+import SwiftUI
 
-enum StatusViewModel: Int, CaseIterable {
+class StatusViewModel: ObservableObject {
+    @Published var status: UserStatus = .notCanfigured
+    
+    func updateStatus(_ status: UserStatus) {
+        self.status = status
+    }
+}
+
+enum UserStatus: Int, CaseIterable {
     case notCanfigured
     case available
     case busy
