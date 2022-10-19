@@ -9,6 +9,8 @@ import SwiftUI
 
 struct EditProfileView: View {
     @State private var fullname = "Okubo Itsuki"
+    @State private var showImagePicker = false
+    
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -29,10 +31,13 @@ struct EditProfileView: View {
                                 .clipShape(Circle())
                             
                             Button(action: {
-                                print("Change profile photo here..")
+                                showImagePicker.toggle()
                             }, label: {
                                 Text("Edit")
                             })
+                            .sheet(isPresented: $showImagePicker, onDismiss: nil) {
+                                ImagePicker(image: <#T##Binding<UIImage?>#>)
+                            }
                         }
                         .padding(.top)
                         
