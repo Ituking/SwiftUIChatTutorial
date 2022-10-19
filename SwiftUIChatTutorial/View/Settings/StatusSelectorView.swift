@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StatusSelectorView: View {
+    @ObservedObject var viewModel = StatusViewModel()
+    
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -19,7 +21,7 @@ struct StatusSelectorView: View {
                         .foregroundColor(.gray)
                         .padding()
                     
-                    StatusCell(status: UserStatus(rawValue: 5)!)
+                    StatusCell(status: viewModel.status)
                     
                     Text("SELECT YOUR STATUS")
                         .foregroundColor(.gray)
@@ -30,7 +32,7 @@ struct StatusSelectorView: View {
                     ForEach(UserStatus.allCases.filter({ $0 != .notCanfigured }), id: \.self) { status in
                         Button(
                             action: {
-                                print("Change status here..")
+                                viewModel.updateStatus(status)
                             },label: {
                                 StatusCell(status: status)
                         })
