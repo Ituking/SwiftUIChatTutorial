@@ -10,6 +10,7 @@
 		C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */; };
 		C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */; };
 		C7ADB33E28FEED0D00B03946 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */; };
+		C7ADB34028FFC4C100B03946 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */; };
 		C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */; };
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
 		C7AE3B9828F7C4A800B37121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 		C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C7AE3B8D28F7C4A600B37121 /* SwiftUIChatTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatTutorialApp.swift; sourceTree = "<group>"; };
 		C7AE3B9228F7C4A600B37121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D7BA0628F9EE52005298CE /* CustomTextField.swift */,
+				C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				C7ADB33E28FEED0D00B03946 /* StatusViewModel.swift in Sources */,
 				C7B763C828FC444100560561 /* EditProfileView.swift in Sources */,
 				C7B20DCA28FECE240001168E /* StatusSelectorView.swift in Sources */,
+				C7ADB34028FFC4C100B03946 /* ImagePicker.swift in Sources */,
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
 				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
 				C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */,
