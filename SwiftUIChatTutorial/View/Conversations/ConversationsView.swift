@@ -14,7 +14,9 @@ struct ConversationsView: View {
 //            chats
             ScrollView {
                 VStack {
-                    
+                    ForEach((0...10), id: \.self) { _ in
+                        ConversationCell()
+                    }
                 }
             }
             
