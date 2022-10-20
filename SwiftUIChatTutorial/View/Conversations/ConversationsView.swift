@@ -23,8 +23,14 @@ struct ConversationsView: View {
             Button(action: {
                 print("Show user list sheet..")
             }, label: {
-                
+                Image(systemName: "square.and.pencil")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
+                    .padding()
             })
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
         }
     }
 }
