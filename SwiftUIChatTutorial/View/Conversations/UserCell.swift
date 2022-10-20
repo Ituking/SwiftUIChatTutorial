@@ -18,7 +18,11 @@ struct UserCell: View {
                 .clipShape(Circle())
             
 //            message info
-            VStack {
+            VStack(alignment: .leading) {
+                Text("Okubo Itsuki")
+                    .font(.system(size: 14, weight: .semibold))
+                
+                Text("")
                 
             }
         }
