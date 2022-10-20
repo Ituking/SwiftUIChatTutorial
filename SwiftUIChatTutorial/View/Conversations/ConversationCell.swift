@@ -9,23 +9,26 @@ import SwiftUI
 
 struct ConversationCell: View {
     var body: some View {
-        HStack {
-            
-            Image("venom-7")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 48, height: 48)
-                .clipShape(Circle())
-            
-//            message info
-            VStack(alignment: .leading) {
-                Text("Okubo Itsuki")
-                    .font(.system(size: 14, weight: .semibold))
+        VStack {
+            HStack {
                 
-                Text("This is test message for now..")
-                    .font(.system(size: 15))
+                Image("venom-7")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 48, height: 48)
+                    .clipShape(Circle())
                 
+    //            message info
+                VStack(alignment: .leading) {
+                    Text("Okubo Itsuki")
+                        .font(.system(size: 14, weight: .semibold))
+                    
+                    Text("This is test message for now..")
+                        .font(.system(size: 15))
+                    
+                }
             }
+            Divider()
         }
     }
 }
