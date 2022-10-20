@@ -31,6 +31,8 @@ struct ConversationsView: View {
             })
             .background(Color(.systemBlue))
             .foregroundColor(.white)
+            .clipShape(Circle())
+            .padding()
         }
     }
 }
