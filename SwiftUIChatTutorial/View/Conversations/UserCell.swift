@@ -2,12 +2,12 @@
 //  UserCell.swift
 //  SwiftUIChatTutorial
 //
-//  Created by 大久保樹 on 2022/10/20.
+//  Created by 大久保樹 on 2022/10/21.
 //
 
 import SwiftUI
 
-struct ConversationCell: View {
+struct UserCell: View {
     var body: some View {
         VStack {
             HStack {
@@ -18,27 +18,25 @@ struct ConversationCell: View {
                     .frame(width: 48, height: 48)
                     .clipShape(Circle())
                 
-    //            message info
+                //            message info
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Okubo Itsuki")
+                    Text("Venom")
                         .font(.system(size: 14, weight: .semibold))
                     
-                    Text("This is test message for now..")
+                    Text("Okubo Itsuki")
                         .font(.system(size: 15))
                     
                 }
                 Spacer()
             }
             .padding(.horizontal)
-            
-            Divider()
         }
         .padding(.top)
     }
 }
 
-struct ConversationCell_Previews: PreviewProvider {
+struct UserCell_Previews: PreviewProvider {
     static var previews: some View {
-        ConversationCell()
+        UserCell()
     }
 }
