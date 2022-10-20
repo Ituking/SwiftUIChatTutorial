@@ -19,7 +19,7 @@ struct ConversationCell: View {
                     .clipShape(Circle())
                 
     //            message info
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 4) {
                     Text("Okubo Itsuki")
                         .font(.system(size: 14, weight: .semibold))
                     
@@ -27,7 +27,10 @@ struct ConversationCell: View {
                         .font(.system(size: 15))
                     
                 }
+                Spacer()
             }
+            .padding(.horizontal)
+            
             Divider()
         }
     }

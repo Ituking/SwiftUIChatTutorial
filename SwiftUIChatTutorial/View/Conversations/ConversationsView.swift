@@ -14,12 +14,8 @@ struct ConversationsView: View {
 //            chats
             ScrollView {
                 VStack(alignment: .leading) {
-                    HStack {
-                        Spacer()
-                    }
                     ForEach((0...10), id: \.self) { _ in
                         ConversationCell()
-                            .padding(.horizontal)
                     }
                 }
             }
