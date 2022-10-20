@@ -11,6 +11,7 @@ struct EditProfileView: View {
     @State private var fullname = "Okubo Itsuki"
     @State private var showImagePicker = false
     @State private var selectedImage: UIImage?
+    @State private var profileImage: Image?
     
     var body: some View {
         ZStack {
@@ -36,7 +37,7 @@ struct EditProfileView: View {
                             }, label: {
                                 Text("Edit")
                             })
-                            .sheet(isPresented: $showImagePicker, onDismiss: nil) {
+                            .sheet(isPresented: $showImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: $selectedImage)
                             }
                         }
@@ -87,6 +88,11 @@ struct EditProfileView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Edit Profile")
+    }
+    
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        profileImage = Image(uiImage: selectedImage)
     }
 }
 
