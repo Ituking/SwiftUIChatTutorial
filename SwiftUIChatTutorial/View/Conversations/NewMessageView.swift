@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct NewMessageView: View {
+    @Binding var showChatView: Bool
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -21,6 +23,6 @@ struct NewMessageView: View {
 
 struct NewMessageView_Previews: PreviewProvider {
     static var previews: some View {
-        NewMessageView()
+        NewMessageView(showChatView: .constant(true))
     }
 }
