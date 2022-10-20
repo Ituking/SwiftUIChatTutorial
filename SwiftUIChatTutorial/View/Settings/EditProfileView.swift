@@ -26,11 +26,19 @@ struct EditProfileView: View {
                     HStack {
                         // photo / edit button
                         VStack {
-                            Image("venom-7")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 64, height: 64)
-                                .clipShape(Circle())
+                            if let profileImage = profileImage {
+                                profileImage
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 64, height: 64)
+                                    .clipShape(Circle())
+                            } else {
+                                Image("venom-7")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 64, height: 64)
+                                    .clipShape(Circle())
+                            }
                             
                             Button(action: {
                                 showImagePicker.toggle()
