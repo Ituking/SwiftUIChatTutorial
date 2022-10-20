@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ConversationsView: View {
     var body: some View {
-        Text("Conversations view..")
-            .navigationTitle("Chats")
+        ZStack(alignment: .bottomTrailing) {
+            
+//            chats
+            ScrollView {
+                VStack {
+                    
+                }
+            }
+            
+//            floating button
+            
+            Button(action: {
+                print("Show user list sheet..")
+            }, label: {
+                
+            })
+        }
     }
 }
 
