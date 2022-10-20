@@ -10,6 +10,7 @@ import SwiftUI
 struct EditProfileView: View {
     @State private var fullname = "Okubo Itsuki"
     @State private var showImagePicker = false
+    @State private var selectedImage: UIImage?
     
     var body: some View {
         ZStack {
@@ -36,7 +37,7 @@ struct EditProfileView: View {
                                 Text("Edit")
                             })
                             .sheet(isPresented: $showImagePicker, onDismiss: nil) {
-                                ImagePicker(image: <#T##Binding<UIImage?>#>)
+                                ImagePicker(image: $selectedImage)
                             }
                         }
                         .padding(.top)
