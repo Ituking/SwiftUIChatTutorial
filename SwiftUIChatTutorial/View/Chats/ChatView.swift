@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ChatView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // messages
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                    ForEach((0 ... 10), id: \.self) { _ in
+                        MessageView(isFromCurrentUser: true)
+                    }
+                }
+            }
+            
+            // input view
+        }
     }
 }
 

@@ -18,7 +18,7 @@ struct UserCell: View {
                     .frame(width: 48, height: 48)
                     .clipShape(Circle())
                 
-                //            message info
+                // message info
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Venom")
                         .font(.system(size: 14, weight: .semibold))

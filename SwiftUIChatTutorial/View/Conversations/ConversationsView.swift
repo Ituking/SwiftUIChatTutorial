@@ -21,7 +21,7 @@ struct ConversationsView: View {
                     
                 })
             
-//            chats
+           // chats
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach((0...10), id: \.self) { _ in
@@ -30,7 +30,7 @@ struct ConversationsView: View {
                 }
             }
             
-//            floating button
+           // floating button
             
             Button(action: {
                 showNewMessageView.toggle()
