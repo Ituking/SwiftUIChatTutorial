@@ -14,6 +14,7 @@
 		C7ADB3422901937D00B03946 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB3412901937D00B03946 /* ConversationCell.swift */; };
 		C7ADB34429019BE400B03946 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB34329019BE400B03946 /* NewMessageView.swift */; };
 		C7ADB34629019C2E00B03946 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB34529019C2E00B03946 /* UserCell.swift */; };
+		C7ADB3482902780B00B03946 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB3472902780B00B03946 /* SearchBar.swift */; };
 		C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */; };
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
 		C7AE3B9828F7C4A800B37121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		C7ADB3412901937D00B03946 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		C7ADB34329019BE400B03946 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		C7ADB34529019C2E00B03946 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		C7ADB3472902780B00B03946 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C7AE3B8D28F7C4A600B37121 /* SwiftUIChatTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatTutorialApp.swift; sourceTree = "<group>"; };
 		C7AE3B9228F7C4A600B37121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				C7D7BA0628F9EE52005298CE /* CustomTextField.swift */,
 				C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */,
+				C7ADB3472902780B00B03946 /* SearchBar.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */,
 				C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
+				C7ADB3482902780B00B03946 /* SearchBar.swift in Sources */,
 				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
 				C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */,
 				C7ADB3422901937D00B03946 /* ConversationCell.swift in Sources */,
