@@ -10,6 +10,8 @@ import SwiftUI
 struct CustomInputView: View {
     @Binding var text: String
     
+    var action: () -> Void
+    
     var body: some View {
         VStack {
             Rectangle()
@@ -22,9 +24,7 @@ struct CustomInputView: View {
                     .font(.body)
                     .frame(minHeight: 30)
                 
-                Button(action: {
-                    print("Send Message..")
-                }, label: {
+                Button(action: action, label: {
                     Text("Send")
                         .bold()
                         .foregroundColor(.black)

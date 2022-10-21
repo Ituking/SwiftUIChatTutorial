@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ChatView: View {
-    var body: some View {
+    @State private var messageText = ""
+    
         VStack {
             // messages
             ScrollView {
@@ -20,6 +21,7 @@ struct ChatView: View {
             }
             
             // input view
+            CustomInputView(text: $messageText, action: <#T##() -> Void#>)
         }
         .navigationTitle("venom")
         .navigationBarTitleDisplayMode(.inline)
