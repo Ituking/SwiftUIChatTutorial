@@ -29,7 +29,7 @@ struct SearchBar: View {
                 Button(action: {
                     isEditing = false
                     text = ""
-                    // need to dismiss keyboard
+                    UIApplication.shared.endEditing()
                 }, label: {
                     Text("Cancel")
                         .foregroundColor(.black)
