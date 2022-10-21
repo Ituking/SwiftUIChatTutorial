@@ -35,9 +35,3 @@ struct CustomInputView: View {
         }
     }
 }
-
-struct CustomInputView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomInputView(text: .constant("Message.."))
-    }
-}
