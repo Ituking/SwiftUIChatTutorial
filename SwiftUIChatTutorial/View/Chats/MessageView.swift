@@ -13,6 +13,16 @@ struct MessageView: View {
     var body: some View {
         HStack {
             if isFromCurrentUser {
+                Spacer()
+                
+                Text("Some test message for now Some test message for.")
+                    .padding(12)
+                    .background(Color.blue)
+                    .font(.system(size: 15))
+                    .clipShape(ChatBubble(isFromCurrentUser: true))
+                    .foregroundColor(.white)
+                    .padding(.leading, 100)
+                    .padding(.horizontal)
                 
             } else {
                 HStack(alignment: .bottom) {
@@ -40,6 +50,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(isFromCurrentUser: false)
+        MessageView(isFromCurrentUser: true)
     }
 }
