@@ -10,9 +10,13 @@ import SwiftUI
 struct NewMessageView: View {
     @Binding var showChatView: Bool
     @Environment(\.presentationMode) var mode
+    @State private var searchText = ""
     
     var body: some View {
         ScrollView {
+            SearchBar(text: $searchText)
+                .padding()
+            
             VStack(alignment: .leading) {
                 ForEach((0...10), id: \.self) { _ in
                     Button(action: {
