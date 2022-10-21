@@ -14,7 +14,7 @@ struct ChatView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                     ForEach((0 ... 10), id: \.self) { _ in
-                        MessageView(isFromCurrentUser: true)
+                        MessageView(isFromCurrentUser: false)
                     }
                 }
             }
