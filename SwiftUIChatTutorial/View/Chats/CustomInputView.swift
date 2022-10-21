@@ -21,7 +21,17 @@ struct CustomInputView: View {
                     .textFieldStyle(PlainTextFieldStyle())
                     .font(.body)
                     .frame(minHeight: 30)
+                
+                Button(action: {
+                    print("Send Message..")
+                }, label: {
+                    Text("Send")
+                        .bold()
+                        .foregroundColor(.black)
+                })
             }
+            .padding(.bottom, 8)
+            .padding(.horizontal)
         }
     }
 }
