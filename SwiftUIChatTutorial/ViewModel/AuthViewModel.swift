@@ -19,6 +19,8 @@ class AuthViewModel: NSObject, ObservableObject {
                 print("DEBUG: Failed to register with error \(error.localizedDescription)")
                 return
             }
+            
+            print("DEBUG: Successfully registered user with firebase!!")
         }
     }
     
