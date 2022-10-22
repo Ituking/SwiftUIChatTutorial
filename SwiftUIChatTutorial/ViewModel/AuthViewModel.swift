@@ -26,8 +26,11 @@ class AuthViewModel: NSObject, ObservableObject {
                 "email": email,
                 "username": username,
                 "fullname": fullname,
-                "uid": user.uid
             ]
+            
+            Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                print("DEBUG: Successfully updated user info in firestore..")
+            }
         }
     }
     
