@@ -5,7 +5,7 @@
 //  Created by 大久保樹 on 2022/10/22.
 //
 
-import Foundation
+import Firebase
 
 class AuthViewModel: NSObject, ObservableObject {
     
@@ -14,10 +14,12 @@ class AuthViewModel: NSObject, ObservableObject {
     }
     
     func register(withEmail email: String, password: String, fullname: String, username: String) {
-        print("Email is \(email)")
-        print("Password is \(password)")
-        print("Fullname is \(fullname)")
-        print("Username is \(username)")
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("DEBUG: Failed to register with error \(error.localizedDescription)")
+                return
+            }
+        }
     }
     
     func uploadProfileImage() {
