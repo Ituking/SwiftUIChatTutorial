@@ -23,7 +23,7 @@ class ChatViewModel: ObservableObject {
             .init(isFromCurrentUser: true, messageText: "I'm lovin' it."),
             .init(isFromCurrentUser: false, messageText: "Talk to you later!"),
             .init(isFromCurrentUser: true, messageText: "Just Do It."),
-            .init(isFromCurrentUser: true, messageText: "Think different.")
+            .init(isFromCurrentUser: true, messageText: "Think Different.")
         ]
     }
 }
