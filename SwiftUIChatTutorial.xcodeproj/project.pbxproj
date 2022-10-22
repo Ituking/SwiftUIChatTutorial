@@ -19,6 +19,8 @@
 		C7ADB34C290286FE00B03946 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB34B290286FE00B03946 /* ChatBubble.swift */; };
 		C7ADB34E29028B9100B03946 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB34D29028B9100B03946 /* MessageView.swift */; };
 		C7ADB3502902A04400B03946 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB34F2902A04400B03946 /* CustomInputView.swift */; };
+		C7ADB35229036C2D00B03946 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB35129036C2D00B03946 /* Message.swift */; };
+		C7ADB35429036D3500B03946 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB35329036D3500B03946 /* ChatViewModel.swift */; };
 		C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */; };
 		C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE3B9228F7C4A600B37121 /* ContentView.swift */; };
 		C7AE3B9828F7C4A800B37121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE3B9728F7C4A800B37121 /* Preview Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		C7ADB34B290286FE00B03946 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		C7ADB34D29028B9100B03946 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C7ADB34F2902A04400B03946 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
+		C7ADB35129036C2D00B03946 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C7ADB35329036D3500B03946 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		C7AE3B8D28F7C4A600B37121 /* SwiftUIChatTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AE3B9028F7C4A600B37121 /* SwiftUIChatTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatTutorialApp.swift; sourceTree = "<group>"; };
 		C7AE3B9228F7C4A600B37121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			children = (
 				C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */,
 				C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */,
+				C7ADB35329036D3500B03946 /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 		C7AE3BA228F7D56F00B37121 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7ADB35129036C2D00B03946 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,8 +307,10 @@
 				C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */,
 				C7D8F7A728FBB99F009831F1 /* SettingsView.swift in Sources */,
 				C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */,
+				C7ADB35429036D3500B03946 /* ChatViewModel.swift in Sources */,
 				C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */,
 				C7ADB34629019C2E00B03946 /* UserCell.swift in Sources */,
+				C7ADB35229036C2D00B03946 /* Message.swift in Sources */,
 				C7ADB34C290286FE00B03946 /* ChatBubble.swift in Sources */,
 				C7ADB34A29027F7C00B03946 /* Extensions.swift in Sources */,
 				C7ADB34429019BE400B03946 /* NewMessageView.swift in Sources */,
