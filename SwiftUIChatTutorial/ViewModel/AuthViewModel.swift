@@ -20,9 +20,14 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
-            guard let user = result?.user else { return
-                
-            }
+            guard let user = result?.user else { return }
+            
+            let data: [String: Any] = [
+                "email": email,
+                "username": username,
+                "fullname": fullname,
+                "uid": user.uid
+            ]
         }
     }
     
