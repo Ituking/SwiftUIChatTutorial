@@ -20,7 +20,9 @@ class AuthViewModel: NSObject, ObservableObject {
                 return
             }
             
-            print("DEBUG: Successfully registered user with firebase!!")
+            guard let user = result?.user else { return
+                
+            }
         }
     }
     
