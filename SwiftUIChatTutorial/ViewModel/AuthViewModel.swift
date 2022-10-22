@@ -13,8 +13,11 @@ class AuthViewModel: NSObject, ObservableObject {
         print("Log in user from view model..")
     }
     
-    func register() {
-        print("Register user from view model..")
+    func register(withEmail email: String, password: String, fullname: String, username: String) {
+        print("Email is \(email)")
+        print("Password is \(password)")
+        print("Fullname is \(fullname)")
+        print("Username is \(username)")
     }
     
     func uploadProfileImage() {
