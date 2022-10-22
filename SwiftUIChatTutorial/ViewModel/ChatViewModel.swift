@@ -26,4 +26,9 @@ class ChatViewModel: ObservableObject {
             .init(isFromCurrentUser: true, messageText: "Think Different.")
         ]
     }
+    
+    func sendMessage(_ messageText: String) {
+        let message = Message(isFromCurrentUser: true, messageText: messageText)
+        messages.append(message)
+    }
 }
