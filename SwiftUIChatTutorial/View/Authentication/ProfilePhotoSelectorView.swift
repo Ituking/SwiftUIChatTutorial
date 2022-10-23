@@ -25,12 +25,19 @@ struct ProfilePhotoSelectorView: View {
                         .frame(width: 100, height: 100)
                         .clipShape(Circle())
                 } else {
-                    
+                    Image("plus_photo")
+                        .resizable()
+                        .renderingMode(.template)
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .clipped()
+                        .padding(.top, 44)
+                        .foregroundColor(.black)
                 }
             })
-            .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
-                ImagePicker(image: $selectedImage)
-            })
+//            .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+//                ImagePicker(image: $selectedImage)
+//            })
         }
     }
 }
