@@ -38,6 +38,9 @@ struct ProfilePhotoSelectorView: View {
 //            .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
 //                ImagePicker(image: $selectedImage)
 //            })
+            
+            Text(profileImage == nil ? "Select a profile photo" : "Great! Tap below to continue")
+                .font(.system(size: 20, weight: .semibold))
         }
     }
 }
