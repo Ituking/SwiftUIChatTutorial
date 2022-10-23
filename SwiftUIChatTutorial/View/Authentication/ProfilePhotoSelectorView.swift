@@ -18,7 +18,15 @@ struct ProfilePhotoSelectorView: View {
             Button(action: {
                 imagePickerPresented.toggle()
             }, label: {
-                
+                if let profileImage = profileImage {
+                    profileImage
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                } else {
+                    
+                }
             })
             .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
                 ImagePicker(image: $selectedImage)
