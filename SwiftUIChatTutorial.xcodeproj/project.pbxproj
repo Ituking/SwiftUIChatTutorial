@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */; };
+		C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */; };
 		C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */; };
 		C7ADB33E28FEED0D00B03946 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */; };
 		C7ADB34028FFC4C100B03946 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				C7D7BA0228F7D8B7005298CE /* LoginView.swift */,
 				C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */,
+				C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
 				C7ADB3482902780B00B03946 /* SearchBar.swift in Sources */,
+				C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */,
 				C7ADB3502902A04400B03946 /* CustomInputView.swift in Sources */,
 				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
 				C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */,
