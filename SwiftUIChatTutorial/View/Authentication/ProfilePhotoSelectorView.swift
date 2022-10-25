@@ -22,14 +22,14 @@ struct ProfilePhotoSelectorView: View {
                     profileImage
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 180, height: 180)
                         .clipShape(Circle())
                 } else {
                     Image("plus_photo")
                         .resizable()
                         .renderingMode(.template)
                         .scaledToFill()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 180, height: 180)
                         .clipped()
                         .padding(.top, 44)
                         .foregroundColor(.black)
