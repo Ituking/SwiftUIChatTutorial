@@ -42,26 +42,26 @@ struct ProfilePhotoSelectorView: View {
             Text(profileImage == nil ? "Select a profile photo" : "Great! Tap below to continue")
                 .font(.system(size: 20, weight: .semibold))
             
-            if let image = selectedImage {
-                Button(action: {
-                    viewModel.uploadProfileImage()
-                }, label: {
-                    Text("Continue")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(width: 340, height: 50)
-                        .background(Color.blue)
-                        .clipShape(Capsule())
-                        .padding()
-                })
-                .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
-                .padding(.top, 24)
-            }
-            
-            Spacer()
-            
+//            if let image = selectedImage {
+//                Button(action: {
+//                    viewModel.uploadProfileImage()
+//                }, label: {
+//                    Text("Continue")
+//                        .font(.headline)
+//                        .foregroundColor(.white)
+//                        .frame(width: 340, height: 50)
+//                        .background(Color.blue)
+//                        .clipShape(Capsule())
+//                        .padding()
+//                })
+//                .shadow(color: .gray, radius: 10, x: 0.0, y: 0.0)
+//                .padding(.top, 24)
+//            }
+//
+//            Spacer()
+//
         }
-        .navigationBarBackButtonHidden(true)
+//        .navigationBarBackButtonHidden(true)
     }
     
     func loadImage() {
