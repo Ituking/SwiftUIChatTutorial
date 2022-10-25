@@ -60,6 +60,7 @@ struct ProfilePhotoSelectorView: View {
             Spacer()
             
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     func loadImage() {
