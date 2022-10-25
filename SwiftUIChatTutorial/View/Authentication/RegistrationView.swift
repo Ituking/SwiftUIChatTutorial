@@ -17,6 +17,12 @@ struct RegistrationView: View {
     
     var body: some View {
         VStack {
+            
+            NavigationLink(
+                destination: ProfilePhotoSelectorView(),
+                isActive: $viewModel.didAuthenticateUser,
+                label: { })
+            
             VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Spacer()
