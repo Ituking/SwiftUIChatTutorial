@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */; };
 		C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */; };
+		C7A6140C29078FDC00E310C5 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6140B29078FDC00E310C5 /* ImageUploader.swift */; };
 		C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */; };
 		C7ADB33E28FEED0D00B03946 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */; };
 		C7ADB34028FFC4C100B03946 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 		C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		C7A6140B29078FDC00E310C5 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		C7AE3B9F28F7D56100B37121 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C7A6140B29078FDC00E310C5 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				C7ADB34E29028B9100B03946 /* MessageView.swift in Sources */,
 				C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */,
 				C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */,
+				C7A6140C29078FDC00E310C5 /* ImageUploader.swift in Sources */,
 				C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
 				C7ADB3482902780B00B03946 /* SearchBar.swift in Sources */,
