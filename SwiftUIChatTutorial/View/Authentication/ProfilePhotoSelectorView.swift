@@ -42,9 +42,9 @@ struct ProfilePhotoSelectorView: View {
             Text(profileImage == nil ? "Select a profile photo" : "Great! Tap below to continue")
                 .font(.system(size: 20, weight: .semibold))
             
-            if profileImage != nil {
+            if let image = selectedImage {
                 Button(action: {
-                    viewModel.uploadProfileImage()
+                    viewModel.uploadProfileImage(image)
                 }, label: {
                     Text("Continue")
                         .font(.headline)

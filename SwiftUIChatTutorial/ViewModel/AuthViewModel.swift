@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import UIKit
 
 class AuthViewModel: NSObject, ObservableObject {
     @Published var didAuthenticateUser = false
@@ -35,8 +36,8 @@ class AuthViewModel: NSObject, ObservableObject {
         }
     }
     
-    func uploadProfileImage() {
-        print("DEBUG: Upload profile image from view model..")
+    func uploadProfileImage(_ image: UIImage) {
+        
     }
     
     func signout() {
