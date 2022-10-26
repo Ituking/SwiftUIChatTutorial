@@ -23,6 +23,8 @@ struct ImageUploader {
                 return
             }
             
+            print("DEBUG: Succesfully uploaded image to firebase storage..")
+            
             ref.downloadURL { url, _ in
                 guard let imageUrl = url?.absoluteString else { return }
                 completion(imageUrl)

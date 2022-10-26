@@ -32,13 +32,18 @@ class AuthViewModel: NSObject, ObservableObject {
             ]
             
             Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                self.tempCurrentUser = user
                 self.didAuthenticateUser = true
             }
         }
     }
     
     func uploadProfileImage(_ image: UIImage) {
-        guard let uid = tempCurrentUser?.uid else { return }
+        guard let uid = tempCurrentUser?.uid else {
+            print("DEBUG: Failed to set temp current user..")
+            return
+        }
+        
         ImageUploader.uploadImage(image: image) { imageUrl in
             Firestore.firestore().collection("users").document(uid).updateData(
                 ["profileImageUrl": imageUrl]) { _ in
