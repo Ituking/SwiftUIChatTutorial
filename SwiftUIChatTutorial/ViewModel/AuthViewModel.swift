@@ -37,7 +37,9 @@ class AuthViewModel: NSObject, ObservableObject {
     }
     
     func uploadProfileImage(_ image: UIImage) {
-        
+        ImageUploader.uploadImage(image: image) { imageUrl in
+            Firestore.firestore().collection("users")
+        }
     }
     
     func signout() {
