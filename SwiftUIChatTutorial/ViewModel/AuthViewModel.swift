@@ -16,12 +16,16 @@ class AuthViewModel: NSObject, ObservableObject {
     static let shared = AuthViewModel()
     
     override init() {
-        print("DEBUG: Auth view model did init..")
         userSession = Auth.auth().currentUser
     }
     
-    func login() {
-        print("Log in user from view model..")
+    func login(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("DEBUG: Failed to sign in with error \(error.localizedDescription)")
+                return
+            }
+        }
     }
     
     func register(withEmail email: String, password: String, fullname: String, username: String) {
@@ -47,15 +51,11 @@ class AuthViewModel: NSObject, ObservableObject {
     }
     
     func uploadProfileImage(_ image: UIImage) {
-        guard let uid = tempCurrentUser?.uid else {
-            print("DEBUG: Failed to set temp current user..")
-            return
-        }
+        guard let uid = tempCurrentUser?.uid else { return }
         
         ImageUploader.uploadImage(image: image) { imageUrl in
             Firestore.firestore().collection("users").document(uid).updateData(
                 ["profileImageUrl": imageUrl]) { _ in
-                print("DEBUG: Succesfully updated user data..")
             }
         }
     }
