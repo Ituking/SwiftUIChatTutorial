@@ -25,6 +25,8 @@ class AuthViewModel: NSObject, ObservableObject {
                 print("DEBUG: Failed to sign in with error \(error.localizedDescription)")
                 return
             }
+            
+            self.userSession = result?.user
         }
     }
     
