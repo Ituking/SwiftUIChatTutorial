@@ -24,6 +24,7 @@ class AuthViewModel: NSObject, ObservableObject {
             }
             
             guard let user = result?.user else { return }
+            self.tempCurrentUser = user
             
             let data: [String: Any] = [
                 "email": email,
@@ -32,7 +33,6 @@ class AuthViewModel: NSObject, ObservableObject {
             ]
             
             Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
-                self.tempCurrentUser = user
                 self.didAuthenticateUser = true
             }
         }
