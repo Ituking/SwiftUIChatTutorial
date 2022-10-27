@@ -27,7 +27,7 @@ struct SettingsView: View {
                 }
                 
                 Button(action: {
-                    print("Handle log out here..")
+                    AuthViewModel.shared.signout()
                 }, label: {
                     Text("Log out")
                         .foregroundColor(.red)
