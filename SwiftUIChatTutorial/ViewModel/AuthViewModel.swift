@@ -14,6 +14,7 @@ class AuthViewModel: NSObject, ObservableObject {
     private var tempCurrentUser: FirebaseAuth.User?
     
     override init() {
+        print("DEBUG: Auth view model did init..")
         userSession = Auth.auth().currentUser
     }
     
