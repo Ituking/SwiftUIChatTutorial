@@ -13,7 +13,7 @@ class AuthViewModel: NSObject, ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     private var tempCurrentUser: FirebaseAuth.User?
     
-    init() {
+    override init() {
         userSession = Auth.auth().currentUser
     }
     
