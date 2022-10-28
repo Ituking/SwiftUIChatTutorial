@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    init(user: User) {
+        
+    }
+    
     var body: some View {
         ZStack {
             Color(.systemGroupedBackground)
@@ -39,11 +44,5 @@ struct SettingsView: View {
                 Spacer()
             }
         }
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
     }
 }
