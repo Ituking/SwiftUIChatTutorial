@@ -5,10 +5,10 @@
 //  Created by 大久保樹 on 2022/10/28.
 //
 
-import Foundation
+import FirebaseFirestoreSwift
 
-struct User: Identifiable {
-    let id: String
+struct User: Identifiable, Decodable {
+    @DocumentID var id: String?
     let username: String
     let fullname: String
     let email: String
