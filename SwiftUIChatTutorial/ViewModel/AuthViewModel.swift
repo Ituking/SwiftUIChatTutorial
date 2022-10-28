@@ -58,6 +58,7 @@ class AuthViewModel: NSObject, ObservableObject {
         ImageUploader.uploadImage(image: image) { imageUrl in
             Firestore.firestore().collection("users").document(uid).updateData(
                 ["profileImageUrl": imageUrl]) { _ in
+                    self.userSession = self.tempCurrentUser
             }
         }
     }
@@ -65,5 +66,9 @@ class AuthViewModel: NSObject, ObservableObject {
     func signout() {
         self.userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func fecthUser() {
+        
     }
 }
