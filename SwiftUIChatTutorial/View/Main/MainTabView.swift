@@ -9,9 +9,10 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selectedIndex = 0
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        if let user = AuthViewModel.shared.currentUser {
+        if let user = viewModel.currentUser {
             NavigationView {
                 TabView(selection: $selectedIndex) {
                     ConversationsView()
