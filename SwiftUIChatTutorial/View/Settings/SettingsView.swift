@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
+    private let user: User
     init(user: User) {
-        
+        self.user = user
     }
     
     var body: some View {
@@ -22,7 +22,7 @@ struct SettingsView: View {
                 NavigationLink(
                     destination: EditProfileView(),
                     label: {
-                        SettingsHeaderView()
+                        SettingsHeaderView(user: user)
                     })
                 
                 VStack(spacing: 1) {

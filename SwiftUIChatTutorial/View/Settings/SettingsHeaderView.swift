@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SettingsHeaderView: View {
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         HStack {
             Image("venom-7")
@@ -18,7 +24,7 @@ struct SettingsHeaderView: View {
                 .padding(.leading)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("Okubo Itsuki")
+                Text(user.fullname)
                     .font(.system(size: 18))
                     .foregroundColor(.black)
                 
