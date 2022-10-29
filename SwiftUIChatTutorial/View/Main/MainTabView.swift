@@ -44,6 +44,8 @@ struct MainTabView: View {
                 }
                 .navigationTitle(tabTitle)
             }
+        } else {
+            // show failed to lead or empty state view
         }
     }
     
