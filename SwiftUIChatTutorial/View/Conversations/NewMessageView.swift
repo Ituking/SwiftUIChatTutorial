@@ -27,6 +27,7 @@ struct NewMessageView: View {
                 ForEach(viewModel.users) { user in
                     Button(action: {
                         showChatView.toggle()
+                        self.user = user
                         mode.wrappedValue.dismiss()
                     }, label: {
                         UserCell(user: user)

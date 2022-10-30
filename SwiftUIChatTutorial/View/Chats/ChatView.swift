@@ -30,7 +30,7 @@ struct ChatView: View {
             // input view
             CustomInputView(text: $messageText, action: sendMessage)
         }
-        .navigationTitle("venom")
+        .navigationTitle(user.username)
         .navigationBarTitleDisplayMode(.inline)
         .padding(.vertical)
     }
