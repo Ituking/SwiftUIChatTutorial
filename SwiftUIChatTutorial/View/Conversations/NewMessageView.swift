@@ -23,7 +23,7 @@ struct NewMessageView: View {
                 .padding()
             
             VStack(alignment: .leading) {
-                ForEach((0...10), id: \.self) { _ in
+                ForEach(viewModel.users) { user in
                     Button(action: {
                         showChatView.toggle()
                         mode.wrappedValue.dismiss()
