@@ -38,6 +38,8 @@
 		C7CC37E0290C003E00462DA3 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = C7CC37DF290C003E00462DA3 /* FirebaseFunctions */; };
 		C7CC37E2290C003E00462DA3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C7CC37E1290C003E00462DA3 /* FirebaseStorage */; };
 		C7CC37E5290D4DD400462DA3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C7CC37E4290D4DD400462DA3 /* Kingfisher */; };
+		C7CC37E7290E432000462DA3 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC37E6290E432000462DA3 /* NewMessageViewModel.swift */; };
+		C7CC37E9290E449600462DA3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC37E8290E449600462DA3 /* Constants.swift */; };
 		C7D7BA0328F7D8B7005298CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0228F7D8B7005298CE /* LoginView.swift */; };
 		C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */; };
 		C7D7BA0728F9EE52005298CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7BA0628F9EE52005298CE /* CustomTextField.swift */; };
@@ -76,6 +78,8 @@
 		C7B763C728FC444100560561 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		C7BA5DDE28FB1CC2004C1C68 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C7CC37D6290BFC6800462DA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C7CC37E6290E432000462DA3 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
+		C7CC37E8290E449600462DA3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7D7BA0228F7D8B7005298CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C7D7BA0428F7D8E2005298CE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C7D7BA0628F9EE52005298CE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				C7ADB33F28FFC4C100B03946 /* ImagePicker.swift */,
 				C7ADB3472902780B00B03946 /* SearchBar.swift */,
 				C7ADB34929027F7C00B03946 /* Extensions.swift */,
+				C7CC37E8290E449600462DA3 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				C7ADB33D28FEED0D00B03946 /* StatusViewModel.swift */,
 				C7ADB35329036D3500B03946 /* ChatViewModel.swift */,
 				C7ADB360290396EB00B03946 /* AuthViewModel.swift */,
+				C7CC37E6290E432000462DA3 /* NewMessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				C7ADB34C290286FE00B03946 /* ChatBubble.swift in Sources */,
 				C7ADB34A29027F7C00B03946 /* Extensions.swift in Sources */,
 				C7ADB34429019BE400B03946 /* NewMessageView.swift in Sources */,
+				C7CC37E7290E432000462DA3 /* NewMessageViewModel.swift in Sources */,
 				C7ADB34E29028B9100B03946 /* MessageView.swift in Sources */,
 				C7AE3B9328F7C4A600B37121 /* ContentView.swift in Sources */,
 				C7D8F7B028FC045B009831F1 /* SettingsHeaderView.swift in Sources */,
@@ -362,6 +369,7 @@
 				C7D8F7AC28FBBAA6009831F1 /* ConversationsView.swift in Sources */,
 				C7AE3B9128F7C4A600B37121 /* SwiftUIChatTutorialApp.swift in Sources */,
 				C7ADB3482902780B00B03946 /* SearchBar.swift in Sources */,
+				C7CC37E9290E449600462DA3 /* Constants.swift in Sources */,
 				C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */,
 				C7ADB3502902A04400B03946 /* CustomInputView.swift in Sources */,
 				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
