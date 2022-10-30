@@ -28,7 +28,7 @@ struct NewMessageView: View {
                         showChatView.toggle()
                         mode.wrappedValue.dismiss()
                     }, label: {
-                        UserCell()
+                        UserCell(user: user)
                     })
                 }
             }
