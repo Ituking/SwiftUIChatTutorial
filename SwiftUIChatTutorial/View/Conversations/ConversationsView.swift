@@ -29,7 +29,7 @@ struct ConversationsView: View {
                 VStack(alignment: .leading) {
                     ForEach((0...10), id: \.self) { _ in
                         NavigationLink(
-                            destination: ChatView(),
+                            destination: ChatView(user: MOCK_USER),
                             label: {
                                 ConversationCell()
                             })
