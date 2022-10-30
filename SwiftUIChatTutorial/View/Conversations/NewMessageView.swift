@@ -12,6 +12,7 @@ struct NewMessageView: View {
     @Environment(\.presentationMode) var mode
     @State private var searchText = ""
     @State private var isEditing = false
+    @ObservedObject var viewModel = NewMessageViewModel()
     
     var body: some View {
         ScrollView {

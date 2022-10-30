@@ -20,6 +20,8 @@ class NewMessageViewModel: ObservableObject {
             guard let documents = snapshot?.documents else { return }
             
             self.users = documents.compactMap({ try? $0.data(as: User.self) })
+            
+            print("DEBUG: Users \(self.users)")
         }
     }
 }
