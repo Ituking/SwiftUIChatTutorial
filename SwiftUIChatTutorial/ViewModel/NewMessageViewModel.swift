@@ -16,6 +16,6 @@ class NewMessageViewModel: ObservableObject {
     }
     
     func fetchUsers() {
-        Firestore.firestore().collection("users")
+        COLLECTION_USERS.getDocuments(completion: <#T##(QuerySnapshot?, Error?) -> Void#>)
     }
 }
