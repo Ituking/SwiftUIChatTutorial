@@ -10,6 +10,11 @@ import SwiftUI
 struct ChatView: View {
     @State private var messageText = ""
     @ObservedObject var viewModel = ChatViewModel()
+    private let user: User
+    
+    init(user: User) {
+        self.user = user
+    }
     
     var body: some View {
         VStack {
@@ -33,11 +38,5 @@ struct ChatView: View {
     func sendMessage() {
         viewModel.sendMessage(messageText)
         messageText = ""
-    }
-}
-
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
     }
 }

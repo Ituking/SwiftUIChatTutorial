@@ -10,6 +10,7 @@ import SwiftUI
 struct ConversationsView: View {
     @State private var showNewMessageView = false
     @State private var showChatView = false
+    @State var selectedUser: User?
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -50,7 +51,7 @@ struct ConversationsView: View {
             .clipShape(Circle())
             .padding()
             .sheet(isPresented: $showNewMessageView, content: {
-                NewMessageView(showChatView: $showChatView)
+                NewMessageView(showChatView: $showChatView, user: $selectedUser)
             })
         }
     }
