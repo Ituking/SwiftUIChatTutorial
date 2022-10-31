@@ -32,7 +32,9 @@ class ChatViewModel: ObservableObject {
                                    "fromId": currentUid,
                                    "toId": chatPartnerId,
                                    "read": false,
-                                   "timestamp": Timestamp(date: Date())
-        ]
+                                   "timestamp": Timestamp(date: Date())]
+        
+        currentUserRef.setData(data)
+        chatPartnerRef.document(messageId).setData(data)
     }
 }
