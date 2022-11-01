@@ -15,4 +15,6 @@ struct Message: Identifiable, Decodable {
     let read: String
     let text: String
     let timestamp: Timestamp
+    
+    var user: User?
 }

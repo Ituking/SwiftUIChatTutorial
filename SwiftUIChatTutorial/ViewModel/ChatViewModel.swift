@@ -30,11 +30,16 @@ class ChatViewModel: ObservableObject {
             guard let documents = snapshot?.documents else {
                 return
             }
-            self.messages = documents.compactMap{ try? $0.data(as: Message.self) }
+            var messages = documents.compactMap{ try? $0.data(as: Message.self) }
             
             print(self.messages)
+            
+            for (index, message) in messages.enumerated() where message.fromId != currentUid {
+                messages[index].user = self.user
+            }
+            
+            self.messages = messages
         }
-
     }
         
         func sendMessage(_ messageText: String) {
