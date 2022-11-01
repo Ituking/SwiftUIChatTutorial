@@ -24,7 +24,7 @@ class ChatViewModel: ObservableObject {
             return
         }
         
-        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId)
+        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId).order(by: "timestamp", descending: false)
         
         query.getDocuments { snapshot, error in
             guard let documents = snapshot?.documents else {
