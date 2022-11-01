@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C736742C28FC167700281FF4 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */; };
+		C7799BF72910D048002B6D43 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7799BF62910D048002B6D43 /* MessageViewModel.swift */; };
 		C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */; };
 		C7A6140C29078FDC00E310C5 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6140B29078FDC00E310C5 /* ImageUploader.swift */; };
 		C7A9127028FC067C00F4DAEA /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		C736742B28FC167700281FF4 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		C7799BF62910D048002B6D43 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		C7A614092905894200E310C5 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		C7A6140B29078FDC00E310C5 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		C7A9126F28FC067C00F4DAEA /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				C7ADB35329036D3500B03946 /* ChatViewModel.swift */,
 				C7ADB360290396EB00B03946 /* AuthViewModel.swift */,
 				C7CC37E6290E432000462DA3 /* NewMessageViewModel.swift */,
+				C7799BF62910D048002B6D43 /* MessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				C7CC37E9290E449600462DA3 /* Constants.swift in Sources */,
 				C7A6140A2905894200E310C5 /* ProfilePhotoSelectorView.swift in Sources */,
 				C7ADB3502902A04400B03946 /* CustomInputView.swift in Sources */,
+				C7799BF72910D048002B6D43 /* MessageViewModel.swift in Sources */,
 				C7D8F7A928FBBA21009831F1 /* ChatView.swift in Sources */,
 				C7D7BA0528F7D8E2005298CE /* RegistrationView.swift in Sources */,
 				C7ADB3422901937D00B03946 /* ConversationCell.swift in Sources */,
