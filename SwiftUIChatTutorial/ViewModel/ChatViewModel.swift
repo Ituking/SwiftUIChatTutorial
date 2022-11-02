@@ -24,22 +24,31 @@ class ChatViewModel: ObservableObject {
             return
         }
         
-        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId).order(by: "timestamp", descending: false)
+        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId)
         
         query.getDocuments { snapshot, error in
             guard let documents = snapshot?.documents else {
                 return
             }
-            var messages = documents.compactMap{ try? $0.data(as: Message.self) }
+            self.messages = documents.compactMap{ try? $0.data(as: Message.self) }
             
             print(self.messages)
-            
-            for (index, message) in messages.enumerated() where message.fromId != currentUid {
-                messages[index].user = self.user
-            }
-            
-            self.messages = messages
         }
+        
+//        let query = COLLECTION_MESSAGES.document(currentUid).collection(chatPartnerId).order(by: "timestamp", descending: false)
+//
+//        query.addSnapshotListener { snapshot, _ in
+//            guard let changes = snapshot?.documentChanges.filter({ $0.type == .added }) else {
+//                return
+//            }
+//            var messages = changes.compactMap{ try? $0.document.data(as: Message.self) }
+//
+//            for (index, message) in messages.enumerated() where message.fromId != currentUid {
+//                messages[index].user = self.user
+//            }
+//
+//            self.messages.append(contentsOf: messages)
+//        }
     }
         
         func sendMessage(_ messageText: String) {
